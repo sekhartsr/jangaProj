@@ -11,10 +11,10 @@ public class StoreData {
 
 	public static void main(String[] args) {
 
-		Configuration cfg = new Configuration();
-		cfg.configure("hibernate.cfg.xml");
+		Configuration config= new Configuration();
+		config.configure("hibernate.cfg.xml");
 
-		SessionFactory factory = cfg.buildSessionFactory();
+		SessionFactory factory = config.buildSessionFactory();
 		Session session = factory.openSession();
 		Transaction t = session.beginTransaction();
 
