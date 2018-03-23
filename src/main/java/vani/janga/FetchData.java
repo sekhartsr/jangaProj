@@ -19,7 +19,7 @@ public class FetchData {
 
 Query query=session.createQuery("from Question");  
 List<Question> list=query.list();  
-
+System.out.println("hiiiii");
 Iterator<Question> itr=list.iterator();  
 while(itr.hasNext()){  
 Question q=itr.next();  
